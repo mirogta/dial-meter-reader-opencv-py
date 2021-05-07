@@ -76,13 +76,10 @@ def find_needle(image, cx, cy, radius):
         x2 = cx + int(size*np.cos(angle*np.pi/180.0))
         y2 = cy + int(size*np.sin(angle*np.pi/180.0))
 
-        #points_on_line = np.linspace(pt_a, pt_b, np.linalg.norm(pt_a-pt_b))
         #cv2.line(image, center, (x2, y2), 255, thickness=2)
         points_on_line = np.linspace(center, (x2, y2), radius) # 100 samples on the line
         for pt in points_on_line:
             point = np.int32(pt)
-            # debug: show points on the line
-            #cv2.circle(image, tuple(point), 1, (255-i*10,i*10,0), -1)
             px = point[0]
             py = point[1]
             b = image[:, :, 0][py, px]
@@ -90,6 +87,8 @@ def find_needle(image, cx, cy, radius):
             r = image[:, :, 2][py, px]
             # Compute grayscale with naive equation
             gray = (b.astype(int) + g.astype(int) + r.astype(int))/3
+            # debug: show points on the line
+            #cv2.circle(image, tuple(point), 1, (255,i*10,0), -1)
             # if sufficiently dark
             if gray < 100:
                 #cv2.circle(image, tuple(point), 1, (255, gray, 0), -1)

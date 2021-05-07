@@ -46,5 +46,15 @@ Run `python run.py`.
 
 ## Links
 
-* <https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_feature_homography/py_feature_homography.html>
+* <https://appsource.microsoft.com/en-us/product/web-apps/clockworksdatainnovationbv.clockworks-meter-reader?tab=overview>
+* <https://github.com/davidpadbury/power-meter-reader>
+* <https://github.com/arjun372/Analog-Utility-Meter-Reader>
+* <https://blogs.gnome.org/jsparber/2020/01/18/digitizing-a-analog-water-meter/>
+* <https://github.com/intel-iot-devkit/python-cv-samples/tree/master/examples/analog-gauge-reader>
 * <https://stackoverflow.com/questions/20891936/rtsp-stream-and-opencv-python>
+
+## Techonology Used
+
+* Markdown
+* Python
+* OpenCV
